@@ -1,15 +1,15 @@
 import React from 'react';
-import pic from './triceratops.jpg';
+// import pic from './triceratops.jpg';
 class HornedBeast extends React.Component{
   render(){
     return(
       <article>
         <header><h2>{this.props.title}</h2></header>
         <img style = {{width: 200, height: 300}}
-          src={pic}
-          alt="Triceratops"
+          src={this.props.imageUrl}
+          alt={this.props.alt}
       />
-      <p>Prehistoric horned beasts in their natural envionment.</p>
+      <p>{this.props.description}</p>
       </article>
     )
   }
