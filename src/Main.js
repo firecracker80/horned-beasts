@@ -6,15 +6,15 @@ class Main extends React.Component{
     return(
       <>
         <HornedBeast 
-        title="Triceratops"
-        imageUrl="https://www.pexels.com/photo/styracosaurus-in-a-jungle-12365157/" 
-        alt="Triceratops"
-        description="Prehistoric horned herbivore."/>
+          title="Triceratops"
+          imageUrl="https://images.pexels.com/photos/12365157/pexels-photo-12365157.jpeg" 
+          alt="Triceratops"
+          description="Prehistoric horned herbivore."/>
         <HornedBeast 
-        title="Mammoth"
-        imageUrl="https://www.istockphoto.com/photo/mammoth-in-autumn-gm1133041273-300608514" 
-        alt="Mammoth"
-        description="Prehistoric horned beast in its natural environment."/>
+          title="Mammoth"
+          imageUrl="https://images.unsplash.com/photo-1557160891-1f0111447464" 
+          alt="Mammoth"
+          description="Prehistoric horned beast in its natural environment."/>
       </>
     )
   }
