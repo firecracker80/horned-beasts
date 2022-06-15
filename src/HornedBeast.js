@@ -1,7 +1,7 @@
 import React from 'react';
-import './HornedBeast.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './HornedBeast.css';
 
 
 class HornedBeast extends React.Component{
@@ -10,7 +10,7 @@ class HornedBeast extends React.Component{
     this.state = {
       likes: 0
     }
-    // console.log('liked');
+    
   };
 
 likesCampaign = () => {
@@ -22,17 +22,16 @@ likesCampaign = () => {
   render(){
     
     return(
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={this.props.image_url} />
-    <Card.Body>
-      <Card.Title><h2>{this.props.title}</h2></Card.Title>
-      <Card.Text>
-        {/* <p onClick={this.likesCampaign} >{this.state.likes} ❤️</p> */}
-        <p>{this.props.description}</p>
-        <p>{this.props.keyword}</p>
-        <p>{this.props.horns}</p>
-      </Card.Text>
-      <Button variant="warning" onClick={this.likesCampaign}>{this.state.likes} ❤️</Button>
+    <Card style={{ width: '18rem' }} border="success" onClick={() => this.props.handleOnShowModal(this.props.Card)}>
+      <Card.Img variant="top" src={this.props.image_url} />
+      <Card.Body>
+        <Card.Title>{this.props.title}</Card.Title>
+        <Card.Text>
+        {this.props.description}
+        {this.props.keyword}
+        {this.props.horns}
+        </Card.Text>
+        <Button variant="warning" onClick={this.likesCampaign}>{this.state.likes} ❤️</Button>
       </Card.Body>
     </Card>
       // <article>
