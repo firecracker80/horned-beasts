@@ -1,3 +1,5 @@
+# Lab-02
+
 Number and name of feature: **Feature #1: Display images**
 
 Estimate of time needed to complete: 1.5 hrs.
@@ -25,6 +27,18 @@ Number and name of feature: **Feature 3: Bootstrap**
 Estimate of time needed to complete: 1 hrs.
 
 Start time: 1916
+
+Finish time: 2042
+
+Actual time needed to complete: 1 hr and 26 minutes
+
+# Lab-03
+
+Number and name of feature: **Feature #1: Display a Modal**
+
+Estimate of time needed to complete: 1 hrs.
+
+Start time: 1607
 
 Finish time: 2042
 
