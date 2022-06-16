@@ -40,6 +40,18 @@ Estimate of time needed to complete: 1 hrs.
 
 Start time: 1607
 
-Finish time: 2042
+Finish time: 1952
 
-Actual time needed to complete: 1 hr and 26 minutes
+Actual time needed to complete: 3 hr and 45 minutes
+
+# Lab-04
+
+Number and name of feature: **Feature #1: **
+
+Estimate of time needed to complete: 1 hrs.
+
+Start time: 1607
+
+Finish time: 1952
+
+Actual time needed to complete: 3 hr and 45 minutes
