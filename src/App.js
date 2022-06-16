@@ -4,6 +4,7 @@ import Header from './Header'
 import Main from './Main'
 import Footer from './Footer';
 import Modal from 'react-bootstrap/Modal';
+import HornForm from './Form';
 import data from './data.json'
 import './App.css';
 
@@ -12,9 +13,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      pickBeast: ''
+      pickBeast: '',
+      allBeasts: data
     };
 
+  };
+
+  filteredBeast = (newBeasts) => {
+    this.setState({allBeasts: newBeasts});
   };
 
   handleOnHide = () => {
@@ -35,9 +41,14 @@ class App extends React.Component {
     return (
       <>
         <Header />
+        <HornForm
+        filteredBeast = {this.filteredBeast}
+        allBeasts = {this.state.allBeasts}/>
+       
         <Main
-          data={data}
-          handleOnShowModal={this.handleOnShowModal} />
+          // data={data}
+          handleOnShowModal={this.handleOnShowModal}
+          allBeasts = {this.state.allBeasts} />
         <SelectedBeast
           showModal={this.state.showModal}
           pickBeast={this.state.pickBeast}

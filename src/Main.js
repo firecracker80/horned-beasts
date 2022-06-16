@@ -3,13 +3,15 @@ import HornedBeast from './HornedBeast';
 import './Main.css';
 
 class Main extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {allBeasts: this.props.data}
+  // }
   
+  
+
   render (){
-    let beasts = this.props.data.map(horned => {
+    let beasts = this.props.allBeasts.map(horned => {
     return <HornedBeast
       handleOnShowModal = {this.props.handleOnShowModal}
       Card = {horned}

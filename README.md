@@ -48,9 +48,9 @@ Actual time needed to complete: 3 hr and 45 minutes
 
 Number and name of feature: **Feature #1: **
 
-Estimate of time needed to complete: 1 hrs.
+Estimate of time needed to complete: 1.5 hrs.
 
-Start time: 1607
+Start time: 1612
 
 Finish time: 1952
 
