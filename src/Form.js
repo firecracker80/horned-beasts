@@ -39,13 +39,14 @@ class HornForm extends React.Component {
   }
   handleHorn = (hornNum) => {
 
-    if (hornNum == "all") {
+    if (hornNum === "all") {
       this.props.filteredBeast(data);
     } else {
       
-      let filtHornArr = this.props.allBeasts.filter(beast => beast.horns == hornNum);
+      let filtHornArr = data.filter(beast => beast.horns === parseInt(hornNum));
+      this.props.filteredBeast(filtHornArr)
+      console.log(filtHornArr);
       }
-      console.log(data);
     // let horn = event.target.value;
     // console.log(horn);
     // if (horn == '1') {
@@ -73,21 +74,19 @@ class HornForm extends React.Component {
       <>
       <Form onSubmit={this.handleSubmit}>
         <Form.Group className="mb-3 m-2">
-          <Form.Group>
             <p>Filter by number of horns.</p>
             <Form.Select className="form-select-sm " horn="horns" onChange={this.handleChange}>
-            <option value="all">All</option>
-             <option value="1">1</option>
-             <option value="2">2</option>
-            <option value="3">3</option>
-            < option value="100">100</option>
+              <option value="all">All</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="100">100</option>
             </Form.Select>
         </Form.Group>
         <Button 
           variant="warning" 
           className="mt-3"
           type="submit">Submit</Button>
-        </Form.Group >
       </Form>
       </>
     )
