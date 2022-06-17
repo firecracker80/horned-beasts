@@ -22,7 +22,7 @@ likesCampaign = () => {
   render(){
     
     return(
-    <Card style={{ width: '18rem' }} border="success" onClick={() => this.props.handleOnShowModal(this.props.Card)}>
+    <Card className="mb-4" style={{ width: '18rem' }} border="success" onClick={() => this.props.handleOnShowModal(this.props.Card)}>
       <Card.Img variant="top" src={this.props.image_url} />
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
