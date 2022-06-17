@@ -34,7 +34,7 @@ class HornForm extends React.Component {
     this.setState({
       selectHorn:  event.target.value
     });  
-    this.handleHorn(ev      ent.target.value);
+    this.handleHorn(event.target.value);
     console.log(event.target.value);
   }
   handleHorn = (hornNum) => {
