@@ -72,10 +72,10 @@ class HornForm extends React.Component {
     return (
       <>
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-3 m-2">
           <Form.Group>
-            <p>Select the number of horns.</p>
-            <Form.Select className="form-select-sm" horn="horns" onChange={this.handleChange}>
+            <p>Filter by number of horns.</p>
+            <Form.Select className="form-select-sm " horn="horns" onChange={this.handleChange}>
             <option value="all">All</option>
              <option value="1">1</option>
              <option value="2">2</option>
