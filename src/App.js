@@ -3,7 +3,7 @@ import SelectedBeast from './SelectedBeast'
 import Header from './Header'
 import Main from './Main'
 import Footer from './Footer';
-import Modal from 'react-bootstrap/Modal';
+// import Modal from 'react-bootstrap/Modal';
 import HornForm from './Form';
 import data from './data.json'
 import './App.css';
